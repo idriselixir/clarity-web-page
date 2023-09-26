@@ -1,0 +1,147 @@
+/* Base styles */
+body, .clarity-landing-page {
+    background-color: black;  
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    height: 100vh;         /* Changed from a fixed height to viewport height */
+    color: var(--color-white);
+    display: flex;         /* Added */
+    flex-direction: column;/* Added */
+}
+
+body {
+    background-color: black;
+}
+
+/* Header styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.logo-container .clarity-logo {
+    font-weight: 800;
+    font-size: 35px;
+    color: aliceblue;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.language-dropdown {
+    position: relative;
+    cursor: pointer;
+}
+
+.languages {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    color: white;
+}
+
+.selected-language {
+    color: #fff;
+}
+
+.language-dropdown:hover .languages {
+    display: block;
+}
+
+.green-button {
+    background-color: aquamarine;
+    border: 2px solid green;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.green-button:hover {
+    background-color: #2a8a57;
+}
+
+.menu-toggle .menu-line {
+    width: 30px;
+    height: 2px;
+    background-color: var(--color-white);
+    margin: 4px 0;
+}
+
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;          /* Added */
+}
+
+.hero-content {
+    text-align: center;
+}
+
+.main-text {
+    font-size: 120px;
+    font-weight: 900;
+    margin: 0;
+    color: #06CD98;
+}
+
+.sub-text {
+    color: white;  
+    font-size: 120px;
+    margin: 20px 0;
+}
+
+footer {
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    flex-wrap: wrap; 
+    color: white;
+    justify-content: space-between;
+}
+
+.footer-content span {
+    font-size: 12px;  
+}
+
+.footer-links  {
+     display: flex;
+     flex-direction: row;
+     justify-content: start;
+     align-items: start;
+     gap: 30px;
+     /* font-size: 12px; */
+     margin-left: -15px;
+     /* transform: translateX(-100px); */
+     
+}
+
+.social-icons {
+    display: flex;  
+    align-items: center;
+
+}
+
+.social-icons img {
+    margin: 0 10px;
+    width: 24px;  
+    height: 24px;
+    cursor: pointer;
+}
+
